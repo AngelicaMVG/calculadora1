@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="assets/calculadora.css" type='text/css'>
+</head>
+<body>
+  <form name='calculadora'>
+    <table >
+      <tr>
+        <td colspan="4"><input type="textfield" name="numero" value="" id= 'pantalla'></td>
+      </tr>
+      <tr>
+        <td><input type='button' value='C'onclick='limpiar();'> </td>
+        <td><input type='button' value='+/-' > </td>
+        <td><input type='button' value='%' onclick= 'operar();'> </td>
+        <td><input type='button' value='/' name='dividir' onclick= 'mostrar(this.value);'> </td>
+      </tr>
+      <tr>
+        <td><input type='button' value='1' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='2' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='3' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='x' name='multiplicar' onclick= 'mostrar(this.value);'> </td>
+      </tr>
+      <tr>
+        <td><input type='button' value='4' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='5' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='6' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='-' onclick= 'mostrar(this.value);'> </td>
+      </tr>
+      <tr>
+        <td><input type='button' value='7' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='8' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='9' onclick= 'mostrar(this.value);'> </td>
+        <td><input type='button' value='+' onclick= 'operar(1);'> </td>
+      </tr>
+      <tr>
+        <td colspan="2" align= 'center'><input type="button" name="" value="0" onclick= 'mostrar(this.value);'>
+        <td><input type="button" value='.' onclick= 'mostrar(this.value);'></td>
+        <td><input type="button" value='=' onclick ='esIgual();'></td>
+      </tr>
+     </table>
+  </div>
+  <script src='assets/js/calculadora.js'></script>
+</body>
+</html>
