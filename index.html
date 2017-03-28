@@ -8,42 +8,41 @@
   <link rel="stylesheet" href="assets/calculadora.css" type='text/css'>
 </head>
 <body>
+  <h1> Calculadora </h1>
   <form name='calculadora'>
-    <table >
-      <tr>
-        <td colspan="4"><input type="textfield" name="numero" value="" id= 'pantalla'></td>
-      </tr>
-      <tr>
-        <td><input type='button' value='C'onclick='limpiar();'> </td>
-        <td><input type='button' value='+/-' > </td>
-        <td><input type='button' value='%' onclick= 'operar();'> </td>
-        <td><input type='button' value='/' name='dividir' onclick= 'mostrar(this.value);'> </td>
-      </tr>
-      <tr>
-        <td><input type='button' value='1' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='2' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='3' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='x' name='multiplicar' onclick= 'mostrar(this.value);'> </td>
-      </tr>
-      <tr>
-        <td><input type='button' value='4' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='5' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='6' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='-' onclick= 'mostrar(this.value);'> </td>
-      </tr>
-      <tr>
-        <td><input type='button' value='7' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='8' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='9' onclick= 'mostrar(this.value);'> </td>
-        <td><input type='button' value='+' onclick= 'operar(1);'> </td>
-      </tr>
-      <tr>
-        <td colspan="2" align= 'center'><input type="button" name="" value="0" onclick= 'mostrar(this.value);'>
-        <td><input type="button" value='.' onclick= 'mostrar(this.value);'></td>
-        <td><input type="button" value='=' onclick ='esIgual();'></td>
-      </tr>
-     </table>
-  </div>
+      <div>
+      <input type="textfield" name="numero" value="" placeholder = '0' id= 'pantalla'>
+    </div><br>
+      <div>
+        <input type='button' class = 'boton'value='C'onclick='limpiar();'>
+        <input type='button' class = 'boton' value='+/- ' onclick= ''>
+        <input type='button' class = 'boton' value=' % ' onclick= 'operar();'>
+        <input type='button' class = 'boton' value=' / ' name='dividir' onclick= 'mostrar(this.value);'>
+      </div><br>
+      <div>
+        <input type='button' class = 'boton' value='1' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value='2' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value='3' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value=' x ' name='multiplicar' onclick= 'mostrar(this.value);'>
+      </div><br>
+      <div>
+        <input type='button' class = 'boton' value='4' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value='5' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value='6' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value=' - ' onclick= 'mostrar(this.value);'>
+      </div><br>
+      <div>
+        <input type='button' class = 'boton' value='7' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value='8' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value='9' onclick= 'mostrar(this.value);'>
+        <input type='button' class = 'boton' value=' + ' onclick= 'mostrar(this.value);'>
+      </div><br>
+      <div>
+        <input type="button" style= 'width:105px'name="" class = 'boton' value="0" onclick= 'mostrar(this.value);'>
+        <input type="button" value='.' class = 'boton' onclick= 'mostrar(this.value);'>
+        <input type="button" value=' = ' class = 'boton' onclick ='operar();'>
+      </div>
+  </form>
   <script src='assets/js/calculadora.js'></script>
 </body>
 </html>

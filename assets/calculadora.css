@@ -1,13 +1,33 @@
-table{
+body{
   background-color: #7b9fd8;
-
+  padding: 20px 20px 20px 20px;
+  margin: 30px 485px 150px 500px;
 }
-#resultado{
+h1{
+  font-size: 40px;
+  font-family: monospace;
+}
+#pantalla{
   background-color:#d2d6dd;
+  font-size: 20px;
+  height: 40px;
+
 
 }
-
-input{
+.boton{
+  font-family: monospace;
   font-size: 20px;
-
+  width: 50px;
+  border-color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+.boton:hover{
+  color: blue;
+}
+form{
+  padding:20px 20px 20px 20px;
+  background-color: red;
+  border-radius: 20px;
+  border-color: black;
 }
